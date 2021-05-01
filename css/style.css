@@ -197,7 +197,7 @@ h1, h2, h3, h4, h5, h6, p {
   text-align: center; }
   .intro__btn::after {
     content: '';
-    background: url("../../img/svg/arrow.svg") no-repeat 50%;
+    background: url("../img/svg/arrow.svg") no-repeat 50%;
     width: 62px;
     height: 20px;
     display: inline-block;
@@ -220,7 +220,7 @@ h1, h2, h3, h4, h5, h6, p {
   .intro__counter p {
     display: inline;
     padding-left: 46px;
-    background: url("../../img/svg/people.svg") no-repeat left;
+    background: url("../img/svg/people.svg") no-repeat left;
     background-size: 40px 24px;
     font-size: 16px;
     line-height: 1.5;
@@ -443,7 +443,7 @@ h1, h2, h3, h4, h5, h6, p {
       padding-top: 10px; } }
 
 .phone__inner {
-  background: #4867ff url("../../img/phone_bg.png") no-repeat right;
+  background: #4867ff url("../img/phone_bg.png") no-repeat right;
   background-size: cover; }
   @media (max-width: 755px) {
     .phone__inner {
@@ -489,7 +489,7 @@ h1, h2, h3, h4, h5, h6, p {
 .phone__btn {
   margin-top: 20px;
   padding-left: 48px;
-  background-image: url("../../img/svg/arrow.svg");
+  background-image: url("../img/svg/arrow.svg");
   background-position: 168px center;
   background-repeat: no-repeat;
   background-color: #4070F4;
