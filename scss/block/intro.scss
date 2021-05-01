@@ -1,0 +1,101 @@
+.intro {
+    min-height: 680px;
+    background: url('../../img/receipt.jpg') no-repeat center;
+    background-size: cover;
+
+    @media (max-width: 768px) {
+        background: url("../../img/receipt.jpg") no-repeat -505px -55px;
+        background-position-x: 75%;
+        background-position-y: -65px;
+    }
+}
+
+.intro__content {
+    padding: 180px 0;
+
+    @media (max-width: 485px) {
+        padding-bottom: 60px;
+    }
+}
+
+.intro__subtitle {
+    font-family: 'Rubik', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.2;
+    color: $black;
+}
+
+.intro__title {
+    margin-top: 10px;
+
+    font-family: 'Rubik', sans-serif;
+    font-size: 74px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: $black;
+}
+
+.intro__text {
+    margin-top: 5px;
+
+    font-size: 20px;
+    line-height: 1.2;
+    color: $black;
+}
+
+.intro__btn {
+    margin-top: 60px;
+    margin-right: 24px;
+    text-align: center;
+    // padding-left: 48px;
+
+    // background-image: url('../../img/svg/arrow.svg');
+    // background-position: 168px center;
+    // background-repeat: no-repeat;
+
+    &::after {
+        content: '';
+        background: url("../../img/svg/arrow.svg") no-repeat 50%;
+        width: 62px;
+        height: 20px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+        text-align: center;
+        // background-position: 430px center;
+        margin-top: 220px;
+        margin-right: 0;
+        margin-bottom: 12px;
+        padding-left: 0;
+    }
+
+    @media (max-width: 512px) {
+        margin-top: 100px;
+    }
+}
+
+.intro__counter {
+    display: inline;
+
+    p {
+        display: inline;
+        padding-left: 46px;
+        background: url('../../img/svg/people.svg') no-repeat left;
+        background-size: 40px 24px;
+        
+        font-size: 16px;
+        line-height: 1.5;
+        color: $black;
+    }
+
+    @media (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+        // background-position: 230px;
+    }
+}

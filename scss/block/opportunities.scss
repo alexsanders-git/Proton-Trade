@@ -1,0 +1,111 @@
+.opportunities {
+    padding-top: 130px;
+    margin-bottom: 100px;
+
+    @media (max-width: 768px) {
+        margin-top: 0;
+    }
+}
+
+.opportunities__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 25px;
+    row-gap: 65px;
+
+    @media (max-width: 992px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 576px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.opportunities__item {
+    height: max-content;
+
+    background-color: #fff;
+    box-shadow: 0px 0px 34px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+
+    &:first-child {
+        background-color: transparent;
+        box-shadow: none;
+        border-radius: 0;
+
+        @media (max-width: 992px) {
+            grid-column: span 2;
+        }
+
+        @media (max-width: 576px) {
+            grid-column: span 1;
+        }
+    }
+}
+
+.opportunities__block {
+    position: relative;
+}
+
+.opportunities__icon {
+    width: 81px;
+    height: 81px;
+    background: #FFFFFF;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transform: translate3d(50%, -50%, 0);
+
+    svg {
+        width: 40px;
+        height: auto;
+        fill: $sky-blue;
+
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.opportunities__content {
+    max-width: 346px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    padding-right: 20px;
+    padding-top: 60px;
+}
+
+.opportunities__block-title {
+    margin-bottom: 5px;
+
+    h3 {   
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.5;
+        color: $black;
+    }
+}
+
+.opportunities__text {
+    p {
+        font-size: 14px;
+        line-height: 1.5;
+        color: $black;
+    }
+}
+
+.opportunities__block-subtitle {
+    margin: 20px 0 5px;
+
+    h4 {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.5;
+        color: $black;
+    }
+}

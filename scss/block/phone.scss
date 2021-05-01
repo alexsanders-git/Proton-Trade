@@ -1,0 +1,120 @@
+.phone {
+    padding-top: 70px;
+    background-color: #fff;
+
+    @media (max-width: 768px) {
+        padding-top: 10px;
+    }
+    
+}
+
+.phone__inner {
+    background:#4867ff url("../../img/phone_bg.png") no-repeat right;
+    background-size: cover;
+
+    @media (max-width: 755px) {
+        background-position: 100px;
+    }
+
+    @media (max-width: 450px) {
+        background-position: -200px;
+    }
+}
+
+.phone__content {
+    margin-top: 85px;
+    padding: 55px 0;
+    position: relative;
+
+    @media (max-width: 768px) {
+        padding: 44px 0;
+    }
+}
+
+.phone__subtitle {
+    font-family: 'Rubik', sans-serif;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #fff;
+
+    @media (max-width: 992px) {
+        font-size: 24px;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 18px;
+    }
+}
+
+.phone__title {
+    margin-top: 10px;
+
+    font-family: 'Rubik', sans-serif;
+    font-size: 74px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+
+    @media (max-width: 992px) {
+        font-size: 60px;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 58px;
+    }
+}
+
+.phone__btn {
+    margin-top: 20px;
+    padding-left: 48px;
+
+    background-image: url('../../img/svg/arrow.svg');
+    background-position: 168px center;
+    background-repeat: no-repeat;
+
+    background-color: #4070F4;
+    border: 2px solid #FFFFFF;
+
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        background-color: #3F60FE;
+        border-width: 3px;
+    }
+}
+
+.phone__img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    max-width: 541px;
+
+    position: absolute;
+    top: -40%;
+    right: -1%;
+
+    @media (max-width: 1050px) {
+        width: 50%;
+        // right: -15px;
+        // bottom: -25px;
+    }
+
+    @media (max-width: 768px) {
+        top: -20%;
+        right: -2%;
+    }
+
+    @media (max-width: 755px) {
+        width: 35%;
+    }
+
+    @media (max-width: 592px) {
+        top: -30%;
+    }
+
+    @media (max-width: 400px) {
+        width: 50%;
+        top: -20%;
+        right: -5%;
+    }
+}

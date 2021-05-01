@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Rubik:wght@300;700&display=swap');
+
+// Vars
+$black: #343A40;
+$sky-blue: #3355FF;
+$blue: #1631B6;
+$gray-bg: #FAFAFA;
+
+// Core
+html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+ }
+ 
+body {
+    font-family: 'Poppins', sans-serif;
+    // font-family: 'Rubik', sans-serif;
+    background-color: $gray-bg;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Core
+.container {
+    max-width: 1190px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @media (max-width: 1200px) {
+        max-width: 1062px;
+    }
+}
+
+.btn {
+    width: 276px;
+    height: 60px;
+    padding: 18px 0;
+    display: inline-block;
+    background-color: $sky-blue;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 3px;
+
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+
+    border: none; 
+    outline: none;
+
+    transition: background-color .2s ease-in-out;
+
+    &:hover {
+        background-color: $blue;
+    }
+}
+
+// Block
+@import "block/header.scss";
+@import "block/section.scss";
+@import "block/intro.scss";
+@import "block/counter.scss";
+@import "block/opportunities.scss";
+@import "block/offer.scss";
+@import "block/phone.scss";
+@import "block/partners.scss";
+@import "block/contacts.scss";
+@import "block/footer.scss";
