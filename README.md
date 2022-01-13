@@ -11,6 +11,6 @@ ___
 
 #### :rocket: Technologies Used
 
-* HTML
-* CSS
-* [Bootstrap v5](https://getbootstrap.com/)
+* HTML5
+* CSS3
+* [SCSS](https://sass-lang.com/)
